@@ -40,7 +40,7 @@ const Navbar = () => {
       {/* Starting part */}
       <div class="navbar-start">
         <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -86,7 +86,7 @@ const Navbar = () => {
       </div>
 
       {/* Middle part */}
-      <div class="navbar-center hidden md:flex">
+      <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
           <li>
             <a href="/products">Products</a>
