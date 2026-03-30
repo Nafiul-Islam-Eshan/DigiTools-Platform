@@ -1,5 +1,6 @@
 import React from "react";
 import BannerImg from "../../assets/banner.png";
+import { IoPlayOutline } from "react-icons/io5";
 
 const Banner = () => {
   return (
@@ -21,7 +22,8 @@ const Banner = () => {
               Explore Products
             </button>
             <button class="btn rounded-full border-2 border-[#9748FF] group hover:bg-[#9748FF] transition duration-300 ease-in-out">
-              <span class="font-medium text-[#9748FF]  group-hover:text-white">
+              <span class=" text-[#9748FF]  group-hover:text-white flex items-center gap-1">
+                <IoPlayOutline />
                 Watch Demo
               </span>
             </button>
