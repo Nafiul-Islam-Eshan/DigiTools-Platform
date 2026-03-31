@@ -1,0 +1,68 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Starter Web Host",
+    "description": "Perfect for personal blogs and small portfolios.",
+    "price": 5.100,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["1 Website", "10GB SSD Storage", "Free SSL Certificate", "24/7 Support"],
+    "icon": "https://i.ibb.co.com/Z1VqNhkC/globe-outline.png"
+  },
+  {
+    "id": "prod_002",
+    "name": "Professional Suite",
+    "description": "Advanced tools for growing businesses and creators.",
+    "price": 199.00,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Unlimited Projects", "Priority Support", "Custom Domain", "Team Collaboration"],
+    "icon": "https://i.ibb.co.com/HpRT3cGg/business-outline.png"
+  },
+  {
+    "id": "prod_003",
+    "name": "SEO Masterclass",
+    "description": "A comprehensive one-time course to dominate search rankings.",
+    "price": 49.00,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["15 Video Modules", "Keyword Research Tools", "Lifetime Access", "Certification"],
+    "icon": "https://i.ibb.co.com/pvXQ2LPt/trending-up-outline.png"
+  },
+  {
+    "id": "prod_004",
+    "name": "Cloud Storage Pro",
+    "description": "Secure, encrypted storage for all your high-res files.",
+    "price": 12.00,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["2TB Storage", "End-to-End Encryption", "File Versioning", "Mobile Sync"],
+    "icon": "https://i.ibb.co.com/Jwk92cxw/cloud-upload-outline.png"
+  },
+  {
+    "id": "prod_005",
+    "name": "Enterprise Shield",
+    "description": "High-level security and compliance for large organizations.",
+    "price": 1200.00,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Dedicated Account Manager", "SSO Integration", "Audit Logs", "99.9% Uptime SLA"],
+    "icon": "https://i.ibb.co.com/Z6kLZvM4/shield-checkmark-outline.png"
+  },
+  {
+    "id": "prod_006",
+    "name": "UI Design Kit",
+    "description": "Modern Figma components to speed up your workflow.",
+    "price": 25.00,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["500+ Components", "Dark Mode Support", "Free Updates", "Commercial License"],
+    "icon": "https://i.ibb.co.com/3yTDYt8D/color-palette-outline.png"
+  }
+]
