@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Achievement from "./Components/Achievement/Achievement";
 import Banner from "./Components/Banner/Banner";
@@ -7,6 +7,9 @@ import Footer from "./Components/Footer/Footer";
 import GetStarted from "./Components/GetStarted/GetStarted";
 import Navbar from "./Components/Navbar/Navbar";
 import Pricing from "./Components/Pricing/Pricing";
+import Cart from "./Components/DigitalTools/Cart";
+import Header from "./Components/DigitalTools/Header";
+import Tabs from "./Components/DigitalTools/Tabs";
 
 // Fetching Products data from the public folder
 const fetchProducts = async () => {
@@ -17,6 +20,9 @@ const fetchProducts = async () => {
 const productsResponse = fetchProducts();
 
 function App() {
+  const [activeTab, setActiveTab] = useState("product");
+  console.log(activeTab);
+
   return (
     <>
       <Navbar />
@@ -25,7 +31,13 @@ function App() {
 
       <Achievement />
 
-      <DigitalTools productsResponse={productsResponse} />
+      <Header />
+
+      <Tabs setActiveTab={setActiveTab} />
+
+      { activeTab==="product" && <DigitalTools productsResponse={productsResponse} />}
+
+      {activeTab==="cart" && <Cart /> }
 
       <GetStarted />
 

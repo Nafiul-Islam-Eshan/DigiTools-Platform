@@ -2,7 +2,7 @@ import React from "react";
 
 const Achievement = () => {
   return (
-    <div className="my-10 bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full">
+    <div className="my-20 bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full">
       <div className="text-white flex gap-5 w-[75%] mx-auto justify-evenly items-center py-7">
         {/* 1st achievement */}
         <div className="text-center ">
