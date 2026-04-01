@@ -1,13 +1,21 @@
 import React from "react";
 import { TfiFaceSad } from "react-icons/tfi";
+import { toast } from "react-toastify";
 
 const Cart = ({ cards, setCards }) => {
   const totalPrice = cards.reduce((sum, item) => sum + item.price, 0);
   //   console.log(cards);
   const handleDelete = (card) => {
-    const newArray = cards.filter(c => c.id !== card.id);
+    const newArray = cards.filter((c) => c.id !== card.id);
     setCards(newArray);
-  }
+    toast.error( `${card.name} is removed` , {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+    });
+  };
 
   return (
     <div className="w-full md:w-[70%] mx-auto my-13 border-2 border-gray-100 rounded-lg p-10 space-y-5">
@@ -16,7 +24,7 @@ const Cart = ({ cards, setCards }) => {
 
       {cards.length === 0 ? ( // while card is empty
         <div className="flex flex-col justify-center items-center gap-3 py-7">
-            <TfiFaceSad className="size-19 text-center"/>
+          <TfiFaceSad className="size-19 text-center" />
           <p className="text-xl text-center opacity-65">Your cart is empty</p>
         </div>
       ) : (
@@ -37,7 +45,12 @@ const Cart = ({ cards, setCards }) => {
                     </div>
                   </div>
                 </div>
-                <button onClick={() => handleDelete(card)} className="btn btn-error btn-outline">Remove</button>
+                <button
+                  onClick={() => handleDelete(card)}
+                  className="btn btn-error btn-outline"
+                >
+                  Remove
+                </button>
               </div>
             );
           })}
