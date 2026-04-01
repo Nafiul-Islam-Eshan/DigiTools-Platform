@@ -1,12 +1,20 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const Products = ({ product, setCards, cards }) => {
   const [isSelected, setIsSelected] = useState(false);
   // console.log(product);
-  
+
   const handleIsSelected = () => {
     setIsSelected(true);
-    setCards([...cards, product])
+    setCards([...cards, product]);
+    toast.success(`${product.name} is added to cart`, {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+    });
   };
 
   return (
@@ -59,7 +67,7 @@ const Products = ({ product, setCards, cards }) => {
           <div className="mt-6 ">
             <button
               onClick={handleIsSelected}
-              className={`w-full btn ${isSelected? "bg-green-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"} text-white rounded-full`}
+              className={`w-full btn ${isSelected ? "bg-green-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"} text-white rounded-full`}
             >
               {isSelected ? "Added to cart" : "Buy now"}
             </button>

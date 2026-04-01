@@ -4,7 +4,6 @@ import { toast } from "react-toastify";
 
 const Cart = ({ cards, setCards }) => {
   const totalPrice = cards.reduce((sum, item) => sum + item.price, 0);
-  //   console.log(cards);
   const handleDelete = (card) => {
     const newArray = cards.filter((c) => c.id !== card.id);
     setCards(newArray);
