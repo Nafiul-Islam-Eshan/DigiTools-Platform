@@ -1,6 +1,7 @@
 import React from "react";
 import BannerImg from "../../assets/banner.png";
 import { IoPlayOutline } from "react-icons/io5";
+import badgeIcon from "../../assets/badgeIcon.png";
 
 const Banner = () => {
   return (
@@ -9,6 +10,11 @@ const Banner = () => {
         <img src={BannerImg} className="max-w-sm rounded-lg shadow-2xl" />
 
         <div className="max-w-160">
+          <div className="badge badge-soft badge-primary mb-5">
+            {" "}
+            <img src={badgeIcon} alt="" />
+            New: AI-Powered Tools Available
+          </div>
           <h1 className="text-3xl sm:text-4xl font-bold">
             Supercharge Your <br /> Digital Workflow
           </h1>
