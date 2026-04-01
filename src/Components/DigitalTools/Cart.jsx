@@ -1,11 +1,12 @@
 import React from "react";
 
 const Cart = ({ cards }) => {
-  console.log(cards);
+    const totalPrice = cards.reduce((sum , item)=> sum + item.price, 0 )
+//   console.log(cards);
   return (
     <div className="w-full md:w-[70%] mx-auto my-8 border-2 border-gray-100 rounded-lg p-10 space-y-5">
       {/* Heading */}
-      <h2 className="font-bold text-3xl"> Your carts</h2>
+      <h2 className="font-bold text-3xl">Your carts</h2>
 
       {/* Each selected cart */}
       {cards.map((card) => {
@@ -28,11 +29,11 @@ const Cart = ({ cards }) => {
       })}
 
       {/* Total */}
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mx-3">
         <p className="opacity-60">Total:</p>
         <p className="text-2xl font-semibold">
           {" "}
-          $<span>0</span>{" "}
+          ${totalPrice}
         </p>
       </div>
 

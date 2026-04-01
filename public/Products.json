@@ -3,7 +3,7 @@
     "id": "prod_001",
     "name": "Starter Web Host",
     "description": "Perfect for personal blogs and small portfolios.",
-    "price": 5.100,
+    "price": 5.00,
     "period": "monthly",
     "tag": "new",
     "tagType": "new",
