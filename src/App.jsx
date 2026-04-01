@@ -21,7 +21,8 @@ const productsResponse = fetchProducts();
 
 function App() {
   const [activeTab, setActiveTab] = useState("product");
-  console.log(activeTab);
+  const [cards, setCards] = useState([]);
+  // console.log(cards);
 
   return (
     <>
@@ -35,9 +36,9 @@ function App() {
 
       <Tabs setActiveTab={setActiveTab} />
 
-      { activeTab==="product" && <DigitalTools productsResponse={productsResponse} />}
+      { activeTab==="product" && <DigitalTools productsResponse={productsResponse} cards={cards} setCards={setCards} />}
 
-      {activeTab==="cart" && <Cart /> }
+      {activeTab==="cart" && <Cart cards={cards}/> }
 
       <GetStarted />
 

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
-const Products = ({ product }) => {
+const Products = ({ product, setCards, cards }) => {
   const [isSelected, setIsSelected] = useState(false);
+  // console.log(product);
   
   const handleIsSelected = () => {
     setIsSelected(true);
+    setCards([...cards, product])
   };
 
   return (
