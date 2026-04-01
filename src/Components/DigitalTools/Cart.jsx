@@ -7,12 +7,21 @@ const Cart = ({ cards, setCards }) => {
   const handleDelete = (card) => {
     const newArray = cards.filter((c) => c.id !== card.id);
     setCards(newArray);
-    toast.error( `${card.name} is removed` , {
+    toast.error(`${card.name} is removed`, {
       position: "top-right",
       autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,
+    });
+  };
+  const handlePayment = () => {
+    setCards([]);
+    toast.success("Payment successful", {
+      position: "top-right",
+      autoClose: 2000,
+      closeOnClick: true,
+      draggable: true,
     });
   };
 
@@ -61,7 +70,7 @@ const Cart = ({ cards, setCards }) => {
 
           {/* Button */}
           <button
-            onClick={() => setCards([])}
+            onClick={handlePayment}
             className="btn btn-primary w-full rounded-full"
           >
             Proceed to Checkout
