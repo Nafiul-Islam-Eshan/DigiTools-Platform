@@ -22,7 +22,6 @@ const productsResponse = fetchProducts();
 function App() {
   const [activeTab, setActiveTab] = useState("product");
   const [cards, setCards] = useState([]);
-  // console.log(cards);
 
   return (
     <>
