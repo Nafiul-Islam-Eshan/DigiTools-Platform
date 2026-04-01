@@ -1,7 +1,7 @@
 import React from "react";
 import ShoppingCard from "../../assets/products/shopping-cart.png";
 
-const Navbar = () => {
+const Navbar = ({ cards }) => {
   return (
     <div class="w-full mx-auto fixed top-0 z-50 inset-x-0 bg-white">
       <div className="navbar w-full md:w-[75%] mx-auto ">
@@ -79,7 +79,11 @@ const Navbar = () => {
           {/* Shopping card */}
           <div className="indicator">
             <img className="size-5" src={ShoppingCard} alt="" />
-            <span className="badge badge-sm indicator-item ">0</span>
+            <span
+              className={`badge badge-sm indicator-item ${cards.length > 0 && "bg-rose-500 text-white"} `}
+            >
+              {cards.length}
+            </span>
           </div>
           <p className="">Login</p>
           <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">

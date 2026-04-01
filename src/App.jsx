@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar cards={cards} />
 
       <Banner />
 
