@@ -1,16 +1,15 @@
-# React + Vite
+# DigiTools Platform
+---
+DigiTools Platform is a streamlined, user-friendly marketplace interface designed to help users browse, select, and manage digital tools with ease. This platform focuses on a clean user experience, ensuring that every interaction—from selection to checkout—is intuitive and responsive.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
+### <u>Technologies: </u>
+1. React js,
+2. Tailwind css,
+3. DaisyUI,
+4. GitHub etc.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### <u>Features: </u>
+1. Utilized Toastify notifications to enhance user awareness and confirm successful actions upon every click.
+2. Navbar and Tabs section has build-in cart count functionality, ensuring users can easily monitor their selected items.
+3. Includes automatic total budge tracking system.
