@@ -38,7 +38,7 @@ function App() {
 
       { activeTab==="product" && <DigitalTools productsResponse={productsResponse} cards={cards} setCards={setCards} />}
 
-      {activeTab==="cart" && <Cart cards={cards}/> }
+      {activeTab==="cart" && <Cart cards={cards} setCards={setCards} /> }
 
       <GetStarted />
 
