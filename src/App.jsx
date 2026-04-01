@@ -34,7 +34,7 @@ function App() {
 
       <Header />
 
-      <Tabs setActiveTab={setActiveTab} />
+      <Tabs setActiveTab={setActiveTab} cards={cards} />
 
       { activeTab==="product" && <DigitalTools productsResponse={productsResponse} cards={cards} setCards={setCards} />}
 

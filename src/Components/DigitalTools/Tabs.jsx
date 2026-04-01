@@ -1,6 +1,6 @@
 import React from "react";
 
-const Tabs = ({ setActiveTab}) => {
+const Tabs = ({ setActiveTab, cards}) => {
   
   return (
     <div className="my-10">
@@ -17,7 +17,7 @@ const Tabs = ({ setActiveTab}) => {
           type="radio"
           name="my_tabs_1"
           className="tab rounded-full px-20 checked:bg-linear-to-r! checked:from-[#4F39F6] checked:to-[#9514FA] checked:text-white!"
-          aria-label="Cart (0)"
+          aria-label={`Cart (${cards.length})`}
           onClick={()=> setActiveTab("cart")}
         />
       </div>
